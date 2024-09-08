@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeleleDom</title>
+</head>
+<body>
+    <ul class="lang">
+    <li>one</li>
+    <li>Two</li>
+    <li>three</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguege(langName)
+    {
+        const item= document.createElement("li");
+        item.innerHTML=`${langName}`;
+        document.querySelector('.lang').appendChild(item);
+    }
+    addLanguege("java");
+    addLanguege("python")
+</script>
+</html>
